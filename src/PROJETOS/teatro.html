@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>KleydSEASON</title>
+		<link rel="icon" href="assets/images/icon.jpg" type="image/png">
+		<link href="../../assets/styles/styles.css" type="text/css" rel="stylesheet">
+	</head>
+
+	<body>
+		<div class="navbar">
+			<ul>
+				<li><a href="../../index.html">INÍCIO</a></li>
+				<li><a href="../../src/curriculo.html">CURRÍCULO</a></li>
+				<li><a href="../../src/projetos.html">PROJETOS</a></li>
+				<li><a href="../../src/outros.html">OUTROS</a></li>
+			</ul>
+		</div>
+
+		<h1>RESERVA DE TEATRO</h1>
+			<div class="container2">
+				<h3>INTRODUÇÃO</h3>
+					<p>Trabalho apresentado à disciplina de	Estágio Supervisionado do Curso de Tecnólogo em	Análise	e Desenvolvimento de Sistemas da Faculdade Multivix Serra,
+					como requisito para obtenção da avaliação semestral, consiste em conceber uma paltaforma online para agenda do Teatro Frei Civitella, administrado pela
+					Secretaria Municipal de Cultura e Turismo de Cariacica.<br/>
+					<br/>
+					Apesar da utilização de ferramentas como Microsoft Office e e-mail, o controle da agenda do teatro é feito quase que inteiramente no papel, com os
+					responsáveis anotando numa planilha física as solicitações e reservas de datas. <br/>
+					</p>
+				<br/>
+
+				<h3>DEFINIÇÃO DO PROJETO </h3>
+					<p>Considerando que o controle da agenda se dá pelo Setor CAC (Coordenação de 
+					Ação Cultural), e este é formado por 3 servidores, a carência de um meio 
+					dinâmico para a organização resulta numa série de confusões para a Secretaria, 
+					tendo diversas informações desencontradas entre as diferentes planilhas de 
+					cada membro do setor. Todo o trâmite para a reserva é moroso, o interessado 
+					em alugar o teatro encaminha um e-mail ao CAC, que responde orientando a 
+					preencher uma ficha física de reserva e protocolar o pedido no Centro 
+					Administrativo da Prefeitura de Cariacica, após protocolado, este é repassado 
+					para a CAC via Processo Eletrônico, analisado e, enfim, respondido pelo e-mail. <br/>
+					<br/>
+					A ideia de estabelecer uma plataforma web para o registro seria primeiramente 
+					tornar a organização da agenda mais simples, cortando o papel e mergulhando 
+					de vez no digital, trabalhando com uma única fonte de dados para a agenda, 
+					fonte essa que seria de fácil acesso ao Secretário de Cultura e Turismo, que rege 
+					e dá a palavra final na autorização de reserva. Mas não só isso, o lado do 
+					interessado em alugar o espaço também seria beneficiado, onde, teria uma 
+					forma mais amigável de solicitar e acompanhar sua solicitação.<br/>
+					</p>
+				<br/>
+				
+				<h3>DESCRIÇÃO DA APLICAÇÃO</h3>
+					<p>Um site web em que um usuário qualquer possa conhecer sobre o Teatro do 
+						Centro Cultural Frei Civitella Del Tronto, e solicitar uma reserva de data e 
+						acompanhar sua solicitação. Tal solicitação é salva num banco de dados que 
+						armazena diversas outras solicitações e reservas, facilitando o controle e 
+						organização dos responsáveis pela agenda do Teatro.
+					</p>
+				<br/>
+
+				<h3>TECNOLOGIAS</h3>
+					<p>Para este projeto de aplicação web, foram utilizadas as seguintes tecnologias:</p>
+						<ul>
+							<li>HTML: linguagem de marcação para confecção da página web, definindo 
+								hierarquia de elementos (corpo, cabeçalho, rodapé, formulários e etc.);</li>
+							<li>CSS: linguagem de estilização para compor a identidade visual da 
+								aplicação, como cores, posicionamentos, fontes, tamanhos, do layout 
+								como um todo;</li>
+							<li>JavaScript: para adicionar uma pequena interatividade para página, 
+								preenchimento automático e formatação dos dados fornecidos nos inputs 
+								do formulário;</li>
+							<li>MySQL: gerenciamento do banco de dados, armazenando as 
+								informações fornecidas pelo usuário no formulário de reserva de data;</li>
+							<li>PHP: utilizada para comunicação com o banco de dados, primeiramente 
+								enviando os dados fornecidos pelo usuário no momento de reserva. Além 
+								de também retornar os dados no momento de consulta.</li>
+						</ul>
+					<p>Com o HTML e o CSS compondo a interface do usuário, recebendo os inputs de 
+						dados, o JavaScript atua em determinado momento para a formatação dos inputs 
+						de dados. Assim, com essa primeira parte atuando no front, o PHP e o MySQL 
+						se tornam responsáveis por comandar a parte backend, trabalhando com os 
+						dados recebidos, armazenando e fornecendo de volta ao usuário quando 
+						requisitado. </p>
+				<br/>
+
+				<h3>APRESENTAÇÃO DA APLICAÇÃO DESENVOLVIDA</h3>
+					<p>Acessando o site, o usuário se depara com a página “INÍCIO”, podendo ler uma 
+						breve apresentação do Teatro, especificações de espaço, normas e 
+						funcionamento, algumas imagens etc. Esta primeira tela serve como uma 
+						apresentação do Centro Cultural, para aqueles que terão seu primeiro contato.</p>
+					<img src="../../assets/images//projetos/teatro/inicio.JPG" class="image">	
+				<br/>
+					<p>Na parte de cima do site há uma barra de navegação, contendo três áreas fora 
+						a inicial. À direita de “INÍCIO” temos “RESERVAR”, página destinada àqueles 
+						que desejam solicitar uma data para utilização do Teatro, contendo um 
+						formulário para preenchimento das informações do solicitante e também do 
+						evento.</p>
+					<img src="../../assets/images//projetos/teatro/reservar.jpg" class="image">	
+				<br/>
+					<p>Ao fim desta tela se encontra o botão de envio, este que manda o conteúdo 
+						preenchido do formulário para o banco de dados, assim cadastrando a 
+						solicitação do usuário.</p>
+					<img src="../../assets/images//projetos/teatro/enviar.jpg" class="image">	
+				<br/>
+					<p>Ao enviar a solicitação, o usuário é redirecionado automaticamente à tela 
+						seguinte na barra de navegação, “CONSULTAR”, esta que é responsável pela 
+						consulta das solicitações já cadastradas. Quando o solicitante pressiona o 
+						botão “ENVIAR”, lhe é fornecido um código de protocolo o qual será utilizado 
+						para averiguar a situação de sua solicitação.</p>
+					<img src="../../assets/images//projetos/teatro/consultar.jpg" class="image">	
+				<br/>
+					<p>A página seguinte é a de “INFORMAÇÕES”, funcionando quase como um 
+						complemento da inicial, ela fornece algumas informações não repassadas no início, como a localização do Centro Cultural Frei Civitella Del Tronto, e um 
+						Rider Técnico do Teatro disponível para download.</p>
+					<img src="../../assets/images//projetos/teatro/informacoes.jpg" class="image">	
+				<br/>
+				<a href="src/outros.html">Acesse este projeto no Github!</a>
+			</div>
+
+		<div class="rodape">
+			<ul>
+				<li>
+					<a href="https://linkedin.com/in/kleydsongc/" target="_blank">
+						<img src="../../assets/images/linkedin.png">
+						@kleydsongc
+					</a>
+				</li>
+				<li>
+					<a href="mailto:kleydsongc@gmail.com">
+						<img src="../../assets/images/gmail.png">
+						kleydsongc@gmail.com
+					</a>
+				</li>
+				<li>
+					<a href="https://github.com/kleydsongc" target="_blank">
+						<img src="../../assets/images/github.png">
+						@kleydsongc
+					</a>
+				</li>
+			</ul>
+		</div>
+	</body>
+</html>
