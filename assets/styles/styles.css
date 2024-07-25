@@ -57,18 +57,15 @@ h2 {
 	font-size: 40px;
 }
 
-.text {
-	text-align: center;
-	color: black;
-	font-family: 'Franklin Gothic Medium';
-	font-size: 40px;
-}
-
 h3 {
 	margin-top: 0px;
 	text-align: center;
 	font-family: 'Franklin Gothic Medium';
 	color: rgb(218, 197, 13)
+}
+
+.recuo {
+	text-indent: 4em;
 }
 
 .corpo {
@@ -89,6 +86,14 @@ h3 {
 	box-shadow: 12px 12px 0px 0px rgba(0,0,0,0.3);
 }
 
+.container:hover .image {
+	opacity: 0.3;
+}
+
+.container:hover .middle {
+	opacity: 1;
+}
+
 .container2 {
 	background-color: black;
 	position: relative;
@@ -103,6 +108,43 @@ h3 {
 
 .container2 a {
 	color: white;
+}
+
+.container3 {
+	position: relative;
+	background-color: white;
+}
+
+.container3:hover .image {
+	opacity: 0.3;
+}
+
+.container3:hover .middle {
+	opacity: 1;
+}
+
+.legenda {
+	text-align: center;
+	color: black;
+	font-family: 'Franklin Gothic Medium';
+	font-size: 40px;
+}
+
+.legenda2 {
+	text-align: center;
+	color: black;
+	font-family: 'Arial';
+	font-size: 25px;
+}
+
+.middle {
+	transition: .5s ease;
+	opacity: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
 }
 
 iframe.artigo {
@@ -145,42 +187,11 @@ iframe.video {
 	height: auto;
 	float: right;
 }
-/*
-.galeria {
-	opacity: 1;
-	display: block;
-	width: 20%;
-	height: auto;
-	transition: .5s ease;
-	backface-visibility: hidden;
-}
-
-.linha {
-  /*display: -ms-flexbox; /* IE10 
-  display: flex;
-  /*-ms-flex-wrap: wrap; /* IE10 
-  flex-wrap: wrap;
-  padding: 0 4px;
-}
-
-/* Create four equal columns that sits next to each other 
-.coluna {
-  /*-ms-flex: 25%; /* IE10 
-  flex: 25%;
-  max-width: 25%;
-  padding: 0 0px;
-}
-
-.coluna img {
-  vertical-align: middle;
-  width: 100%;
-}*/
 
 .galeria {
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
 	grid-template-rows: repeat(2, 1fr);
-	background-color: white;
 	position: relative;
 	width: 45%;
 	margin-left: auto;
@@ -189,26 +200,18 @@ iframe.video {
 	box-shadow: 12px 12px 0px 0px rgba(0,0,0,0.3);
 }
 
-.middle {
-	transition: .5s ease;
-	opacity: 0;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	-ms-transform: translate(-50%, -50%);
-}
-
-.container:hover .image {
+/*.galeria a:hover:not(.active) {
 	opacity: 0.3;
+}*/
+
+table, th, td {
+	border: 1px solid white;
+	border-collapse: collapse;
+	padding: 8px;
 }
 
-.container:hover .middle {
-	opacity: 1;
-}
-
-.galeria a:hover:not(.active) {
-	opacity: 0.3;
+th {
+	text-align: center;
 }
 
 /**/
