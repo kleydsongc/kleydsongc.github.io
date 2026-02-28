@@ -1,0 +1,156 @@
+body {								/*Estilização tag body*/
+	margin: 0;						/*define margem a margem como zero*/
+	font-family: arial;
+	font-size: 18px;
+	background-color: #b30000;		/**/
+	color: white;
+	text-align: justify;					/**/
+}
+
+.port ul {
+	margin-top: 20px;
+	left: 0;
+	width: 100%;
+	height: 100vh;
+	background-color: black;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	z-index: 99;
+}
+
+.port li {
+	float: left;
+	width: 33%;
+}
+
+.desc {
+	margin-left: 50px;
+	margin-right: 50px;
+}
+
+.port li h1 {
+	text-align: center;
+	color: white;
+	font-family: 'Franklin Gothic Medium';
+	font-weight: bold;
+	word-break: break-all;
+	line-height: 0.6;
+	display: block;
+	width: 100%;
+	text-decoration: none;
+}
+
+.card {
+	width: 65%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+h1 {
+	text-align: center;
+	font-family: 'Franklin Gothic Medium';
+	font-size: 45px;
+}
+
+h2 {
+	text-align: center;
+	font-family: 'Franklin Gothic Medium';
+	font-size: 28px;
+}
+
+.container2 {
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	margin-left: auto;
+	margin-right: auto;
+	overflow: hidden;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.container2 div {
+	/*float: left;*/
+	width: 50%;
+	margin-right: 80px;
+	margin-left: 70px;
+}
+
+#port {
+	background-color: black;
+}
+
+#passagem {
+	background: linear-gradient(to right, transparent 0%, black 85%), url("../../assets/images/portfolio/passagem.jpg");
+	background-size: cover;
+}
+
+#baleia {
+	background: linear-gradient(to left, transparent 0%, black 85%), url("../../assets/images/portfolio/baleia.jpeg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#mexidao {
+	background: linear-gradient(to right, transparent 0%, black 85%), url("../../assets/images/portfolio/mexidao.jpg");
+}
+
+#bola8 {
+	background: linear-gradient(to left, transparent 0%, black 85%), url("../../assets/images/portfolio/bola8.jpg");
+}
+
+/*
+#bgblack h1 {
+	float: right;
+}*/
+
+iframe {
+	position: relative;
+	width: 960px;
+	height: 540px;
+	margin-left: 42px;
+	margin-right: 42px;
+	overflow: hidden;
+	display: block;
+}
+
+footer ul {
+	margin-top: 20px;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	background-color: black;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	z-index: 99;
+}
+
+footer li {
+	float: left;
+	width: 33%;
+}
+
+footer li a {
+	text-align: center;
+	color: white;
+	font-family: 'Franklin Gothic Medium';
+	font-weight: bold;
+	display: block;
+	width: 100%;
+	text-decoration: none;
+	padding: 8px;
+}
+
+footer li a:hover {
+	color: rgb(218, 197, 13);
+}
+
+footer img {
+	vertical-align: middle;
+}
