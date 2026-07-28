@@ -1,3 +1,10 @@
+const gifs = ["assets/gifs/static.gif", "assets/gifs/dvd.gif"];
+
+gifs.forEach(src => {
+	const img = new Image();
+	img.src - src;
+});
+
 const preview = document.getElementById("preview-img");
 const projetos = document.querySelectorAll("[data-preview]");
 
